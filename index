@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doors of Durin</title>
+    <script>
+        function checkPassword() {
+            const password = document.getElementById("password").value;
+            const correctPassword = "friend";
+
+            if (password === correctPassword) {
+                window.location.href = "success.html"; // Redirect to this page on correct password
+				alert("Correct password");
+            } else {
+                alert("Incorrect password. Please try again.");
+            }
+        }
+    </script>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1 style="text-align:center; font-family:Tangerine, serif; font-size:60px; margin-bottom:5px">Speak friend and enter</h1>
+	<div>
+		<img style="border-style:double; padding:5px; margin:auto; display:block" src="Doors_of_Durin.jpg" alt="Doors of Durin">
+		<div style="display: grid; place-items: center">
+			<span style="margin:5px"> 
+				<input type="password" id="password" placeholder="Enter password" required>
+				<button onclick="checkPassword()">Enter</button>
+			</span>
+		</div>
+	</div>
+</body>
+</html>
